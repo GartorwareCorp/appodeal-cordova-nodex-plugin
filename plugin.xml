@@ -220,16 +220,13 @@
         <source-file src="src/android/AppodealPlugin.java" target-dir="src/com/appodeal/plugin" />
         <framework src="src/android/dependency_fix.gradle" custom="true" type="gradleReference" /> 
         <source-file src="libs/Android/appodeal-2.1.11.jar" target-dir="libs" />
-        <source-file src="libs/Android/applovin-7.5.0.jar" target-dir="libs" />
         <source-file src="libs/Android/appodeal-banner-view-2.3.0.jar" target-dir="libs" />
         <source-file src="libs/Android/dagger-2.7.jar" target-dir="libs" />
         <source-file src="libs/Android/eventbus-2.2.1.jar" target-dir="libs" />
-        <source-file src="libs/Android/ironsource-6.7.3.jar" target-dir="libs" />
         <source-file src="libs/Android/javax.inject-1.jar" target-dir="libs" />
         <source-file src="libs/Android/rxjava-1.2.0.jar" target-dir="libs" />
-        <source-file src="libs/Android/inmobi-6.2.3.jar" target-dir="libs" />
         <source-file src="libs/Android/picasso-2.5.2.jar" target-dir="libs" />
-        <source-file src="libs/Android/unity_ads-2.1.0.jar" target-dir="libs" />
+        <source-file src="libs/Android/applovin-7.5.0.jar" target-dir="libs" />
 		<source-file src="libs/Android/startapp-3.6.7.jar" target-dir="libs" />
     </platform>
 
