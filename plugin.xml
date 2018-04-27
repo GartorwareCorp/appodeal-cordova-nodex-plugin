@@ -18,12 +18,12 @@
                 <param name="android-package" value="com.appodeal.plugin.AppodealPlugin"/>
             </feature>
         </config-file>
-        <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest" mode="merge">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 			<uses-permission android:name="android.permission.INTERNET" />
         </config-file>
         <framework src="com.google.android.gms:play-services-ads:+" />
-        <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest/application" mode="merge">
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
 			<activity android:name="com.appodeal.ads.InterstitialActivity"
 				android:configChanges="orientation|screenSize"
 				android:theme="@android:style/Theme.Translucent.NoTitleBar" />
@@ -217,20 +217,20 @@
 			</receiver>
         </config-file>
 
-        <source-file src="src/android/AppodealPlugin.java" target-dir="app/src/main/com/appodeal/plugin" />
+        <source-file src="src/android/AppodealPlugin.java" target-dir="src/com/appodeal/plugin" />
         <framework src="src/android/dependency_fix.gradle" custom="true" type="gradleReference" /> 
-        <source-file src="libs/Android/appodeal-2.1.11.jar" target-dir="app/src/main/libs" />
-        <source-file src="libs/Android/applovin-7.5.0.jar" target-dir="app/src/main/libs" />
-        <source-file src="libs/Android/appodeal-banner-view-2.3.0.jar" target-dir="app/src/main/libs" />
-        <source-file src="libs/Android/dagger-2.7.jar" target-dir="app/src/main/libs" />
-        <source-file src="libs/Android/eventbus-2.2.1.jar" target-dir="app/src/main/libs" />
-        <source-file src="libs/Android/ironsource-6.7.3.jar" target-dir="app/src/main/libs" />
-        <source-file src="libs/Android/javax.inject-1.jar" target-dir="app/src/main/libs" />
-        <source-file src="libs/Android/rxjava-1.2.0.jar" target-dir="app/src/main/libs" />
-        <source-file src="libs/Android/inmobi-6.2.3.jar" target-dir="app/src/main/libs" />
-        <source-file src="libs/Android/picasso-2.5.2.jar" target-dir="app/src/main/libs" />
-        <source-file src="libs/Android/unity_ads-2.1.0.jar" target-dir="app/src/main/libs" />
-		<source-file src="libs/Android/startapp-3.6.7.jar" target-dir="app/src/main/libs" />
+        <source-file src="libs/Android/appodeal-2.1.11.jar" target-dir="libs" />
+        <source-file src="libs/Android/applovin-7.5.0.jar" target-dir="libs" />
+        <source-file src="libs/Android/appodeal-banner-view-2.3.0.jar" target-dir="libs" />
+        <source-file src="libs/Android/dagger-2.7.jar" target-dir="libs" />
+        <source-file src="libs/Android/eventbus-2.2.1.jar" target-dir="libs" />
+        <source-file src="libs/Android/ironsource-6.7.3.jar" target-dir="libs" />
+        <source-file src="libs/Android/javax.inject-1.jar" target-dir="libs" />
+        <source-file src="libs/Android/rxjava-1.2.0.jar" target-dir="libs" />
+        <source-file src="libs/Android/inmobi-6.2.3.jar" target-dir="libs" />
+        <source-file src="libs/Android/picasso-2.5.2.jar" target-dir="libs" />
+        <source-file src="libs/Android/unity_ads-2.1.0.jar" target-dir="libs" />
+		<source-file src="libs/Android/startapp-3.6.7.jar" target-dir="libs" />
     </platform>
 
     <platform name="ios">
